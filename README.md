@@ -6,4 +6,4 @@ Sistema de compra e venda de livros
 
 ## MER - Modelo Entidade Relacionamento
 
-![image](/resources/image/mer_bookstore.png)
+![image](/resources/img/mer_bookstore.png)
