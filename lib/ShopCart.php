@@ -8,12 +8,13 @@ class ShopCart
     protected $list;
     protected $userId;
 
-    public function __construct(int $user_Id) 
+  
+    public function __construct(int $user_id) 
     {
         checkUserIsLogged();
 
         $this->conn = connection();
-        $this->userId = $user_Id;
+        $this->userId = $user_id;
         $this->list = [];
 
         $queryResult = $this->conn->query("
