@@ -2,13 +2,11 @@
 
 session_start();
 
-require '/lib/functions.php';
+require_once '../lib/functions.php';
+require_once '../lib/GetProduct.php';
 
-if (isset($_GET['id'])) {
-    $product = searchProduct($_GET['id']);
+if (isset($_GET['id_product'])) {
+    $product = new GetProduct(clear('id_product'));
 
-    if (count($product) === 0) {
-        header('location: /views/404.html');
-    }
 }
 
