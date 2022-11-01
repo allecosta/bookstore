@@ -2,10 +2,10 @@
 
 session_start();
 
-require_once 'lib/functions.php';
-require_once 'lib/SearchProducts.php';
+require_once '../lib/functions.php';
+require_once '../lib/SearchProducts.php';
 
-$listProducts = new SearchProducts();
+$listProducts = new SearchProducts("");
 
 if (isset($_GET['page'])) {
     
