@@ -2,21 +2,15 @@
 
 function connection() 
 {
-    define('DB_HOST', 'localhost');
-    define('DB_NAME', 'db_bookstore');
-    define('DB_CHARSET', 'utf8mb4');
-    define('DB_USER', '###');
-    define('DB_PASSWORD', '###');
+    $server = "localhost";
+    $username = "###";
+    $password = "###";
+    $dbname = "db_bookstore";
 
-    try {
-        $conn = new PDO("mysql:host=DB_HOST;dbname=DB_NAME;charset=DB_CHARSET", DB_USER, DB_PASSWORD);
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $conn = new PDO("mysql:host={$server};dbname={$dbname}", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
-        echo "Connected successfully";
-
-    } catch(PDOException $e) {
-        echo "Connection failed: " . $e->getMessage();
-    }
+    return $conn;
     
 }
 
