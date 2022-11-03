@@ -1,7 +1,7 @@
 <?php
 
-require_once '/lib/functions.php';
-require_once '/lib/CreateUser.php';
+require_once '../lib/functions.php';
+require_once '../lib/CreateUser.php';
 
 $pagSuccess = 'user_registered.php';
 $validation = 4;
