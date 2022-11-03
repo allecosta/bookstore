@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php require_once './templates/head.php'; ?>
+<?php require_once '../templates/head.php'; ?>
 
 <body>
 
