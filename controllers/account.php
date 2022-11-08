@@ -2,7 +2,7 @@
 
 session_start();
 
-require '/lib/functions.php';
+require '../lib/functions.php';
 
 //$domain = "https://bookstore";
 
