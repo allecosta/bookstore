@@ -1,0 +1,21 @@
+main {
+    padding-top: 2em;
+}
+
+#products-list h1 {
+    text-align: cente;
+    margin: 0 0 1em 0;
+    text-transform: capitalize;
+}
+
+#products-list>div {
+    margin: 0 0 2em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.css-image {
+    width: 100%;
+    max-width: 180px;
+    max-height: 300px;
+}
