@@ -10,7 +10,7 @@
 <?php require 'header.php'; ?>
 
     <main class="container-fluid">
-        <h1 id="welcome">Bem vindo à Book Store</h1>
+        <h1 id="welcome" class="text-center">Bem vindo à Book Store</h1>
         <section class="row container col-12">
             
             <?php if ($products !== false) : ?>
