@@ -23,7 +23,7 @@
     <form id="search" class="form-inline input-group" action="view_search.php" method="GET">
         <input class="form-control" type="text" name="search" placeholder="O que você procura?">
         <div class="input-group-append">
-            <input class="btn btn-" type="submit" value="Pesquisar">
+            <input class="btn btn-primary ms-2" type="submit" value="Pesquisar">
         </div>
     </form>
 </header>
