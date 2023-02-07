@@ -12,33 +12,30 @@
     <main class="container-fluid text-center text-capitalize">
         <h1>Seja Bem vindo a Book Store! Faça o seu login</h1>
         <form action="/controllers/login.php" method="POST">
-            <div class="container row col-12 css-input-box">
-                <label class="col-12 col-md-4 text-center">
-                    <div class="col-12 col-md-8">
-                    Email: <input type="email" name="email" placeholder="informe o seu email" value="<?php echo $infos['email']; ?>" required>
-                            <label class="text-danger">
-                                <?= $msg_errors['email']; ?>
-                            </label>
-                    </div>
-                </label>
+            <div class="row mb-3">
+                <label class="col-sm-2 col-form-label">E-mail </label>
+                <div class="col-sm-10">
+                    <input type="email" name="email" class="form-control" value="<?= $infos['email']; ?>" required>
+                    <label class="text-danger">
+                        <?= $msg_errors['email']; ?>
+                    </label>
+                </div>   
             </div>
-            <div class="container row col-12 css-input-box">
-                <label class="col-12 col-md-4 text-center">
-                    <div class="col-12 col-md-8">
-                    Senha: <input type="password" name="pass" placeholder="informe a sua senha" required>
-                        <label class="text-danger">
-                            <?php echo $msg_errors['pass']; ?>
-                        </label>
-                    </div>
-                </label>
+            <div class="row mb-3">
+                <label class="col-sm-2 col-form-label">Senha </label>
+                <div class="col-sm-10">
+                    <input type="password" name="pass" class="form-control" required>
+                    <label class="text-danger">
+                        <?php echo $msg_errors['pass']; ?>
+                    </label>
+                </div>    
             </div>
-
             <?php if (isset($_GET['buy'])) : ?>
-                <input type="hidden" name="buy" value="<?php echo clear($_GET['buy']); ?>">
+                <input type="hidden" name="buy" value="<?= clear($_GET['buy']); ?>">
             <?php endif ?>
 
             <div class="container">
-                <input type="submit" class="btn btn-primary" value="Entrar">
+                <button type="submit" class="btn btn-primary">Entrar</button>
             </div>
             <div class="container">
                 <p>Já possui uma conta?<a href="view_create_account.php"> Registre-se</a></p>

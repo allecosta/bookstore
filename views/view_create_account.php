@@ -16,51 +16,51 @@
                 <p>Preencha os dados abaixo para criar a sua conta</p>
             </div>
             <form action="" method="POST">
-                <div>
-                    <label>
-                        Nome Completo
-                        <input type="text" name="name" placeholder="Informe o seu nome completo"
-                        value="<?php echo $infos['name']; ?>" required> 
-                    </label>
-                    <label class="css-msg-error">
-                        <?php echo $msg_errors['name']; ?>
-                    </label>
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Nome </label>
+                    <div class="col-sm-10">                
+                        <input type="text" name="name" class="form-control" placeholder="Informe o seu nome completo"
+                        value="<?= $infos['name']; ?>" required> 
+                        <label class="css-msg-error">
+                            <?php echo $msg_errors['name']; ?>
+                        </label>
+                    </div>
                 </div>
-                <div>
-                    <label>
-                        E-mail 
-                        <input type="email" name="email" placeholder="Informe o seu email"
-                        value="<?php echo $infos['email']; ?>" required>
-                    </label>
-                    <label class="css-msg-error">
-                        <?php echo $msg_errors['email']; ?>
-                    </label>
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">E-mail </label>
+                    <div class="col-sm-10">
+                        <input type="email" name="email" class="form-control" placeholder="Informe o seu email"
+                            value="<?= $infos['email']; ?>" required>
+                        <label class="css-msg-error">
+                            <?= $msg_errors['email']; ?>
+                        </label>
+                    </div>     
                 </div>
-                <div>
-                    <label>
-                        Senha 
-                        <input type="password" name="pass" placeholder="Informe a sua senha com 8 caracteres"
-                        value="<?php echo $infos['pass']; ?>" required maxlength="8">
-                    </label>
-                    <label class="css-msg-error">
-                        <?php echo $msg_errors['pass']; ?>
-                    </label>
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Senha </label>
+                    <div class="col-sm-10">
+                        <input type="password" name="pass" class="form-control" placeholder="Informe a sua senha com 8 caracteres"
+                        value="<?= $infos['pass']; ?>" required maxlength="8">
+                        <label class="css-msg-error">
+                            <?= $msg_errors['pass']; ?>
+                        </label>
+                    </div>
                 </div>
-                <div>
-                    <label>
-                        Confirmação de senha
-                        <input type="password" name="confir_pass" placeholder="Repita a senha informada..."
-                        value="<?php echo $infos['confir_pass']; ?>" required>
-                    </label>
-                    <label class="css-msg-error">
-                        <?php echo $msg_errors['confir_pass']; ?>
-                    </label>
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Confirme a senha </label>
+                    <div class="col-sm-10">
+                        <input type="password" name="confir_pass" class="form-control" placeholder="Repita a senha informada"
+                        value="<?= $infos['confir_pass']; ?>" required>
+                        <label class="css-msg-error">
+                            <?= $msg_errors['confir_pass']; ?>
+                        </label>
+                    </div>
                 </div>
-
-                <input type="submit" id="submit" class="btn btn-primary" name="submit" value="Cadastrar">
+                <div class="container">
+                    <button type="submit" id="submit" class="btn btn-primary" name="submit">Cadastrar</button>
+                </div> 
             </form>
         </section>
-    </main>
-    
+    </main>   
 </body>
 </html>
