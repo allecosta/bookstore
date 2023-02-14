@@ -1,9 +1,9 @@
-<?php require_once '/lib/functions.php'; ?>
+<?php require_once '../lib/functions.php'; ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php require_once './templates/head.php'; ?>
+<?php require_once '../templates/head.php'; ?>
 
 <body>
     

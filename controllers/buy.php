@@ -2,8 +2,8 @@
 
 session_start();
 
-require_once '/lib/functions.php';
-require_once '/lib/GetProduct.php';
+require_once '../lib/functions.php';
+require_once '../lib/GetProduct.php';
 
 $msgQuantity = "";
 $confirmation = false;
