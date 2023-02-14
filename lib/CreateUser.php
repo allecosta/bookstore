@@ -15,7 +15,7 @@ class CreateUser extends User
     {
         parent::__construct();
 
-        $result = $this->conn->query("SELECT email FROM users WHERE email='{$email}'")->fetchAll;
+        $result = $this->conn->query("SELECT email FROM users WHERE email='{$email}'")->fetchAll();
 
         if (count($result) > 0) {
             $this->success = false;
