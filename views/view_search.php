@@ -12,7 +12,7 @@
     <main>
         <section class="row container col-12">
             <?php if ($products === false) : ?>
-                <h1>Nenhum produto encontrado!</h1>
+                <h1 class="text-center">Nenhum produto encontrado!</h1>
             <?php else : ?>
                 <?php foreach ($products as $product) : ?>
                     <div class="css-container-product col-12 col-sm-6 col-md col-lg-3">
