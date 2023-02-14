@@ -1,9 +1,9 @@
-<?php require_once './controllers/search.php'; ?>
+<?php require_once '../controllers/search.php'; ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php require_once './templates/head.php'; ?>
+<?php require_once '../templates/head.php'; ?>
 
 <body>
 
@@ -29,7 +29,7 @@
             <?php endif; ?>
         </section>
 
-        <?php require './templates/pagination.php'; ?>
+        <?php require '../templates/pagination.php'; ?>
     </main>
     
 </body>
